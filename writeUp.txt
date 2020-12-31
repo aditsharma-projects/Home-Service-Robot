@@ -1,0 +1,9 @@
+Used/created all packages specified by the project. SLAM was the most difficult part of the project and I spent a lot of time tuning the parameters and messing around with feutures in the world in order to figure out how to generate a usable map. The rest of the parts were mostly straightforward except for establishing communication between pick_objects node and add_markers node, which took some time to set up. 
+The following packages are used in the project
+add_markers: simulates objects at pickup and dropoff zone and communicates with pick_objects node to coordinate with robot's location
+map: stores world and map files
+pick_objects: directs robot towards pickup and dropoff goals
+rvizConfig: config files for launching rviz for home service robot
+slam_gmapping: generate map used for amcl
+amcl: localize robot and create path to target destinations
+add_marker_helper: implements functionlity required for add_marker.sh part of rubric
